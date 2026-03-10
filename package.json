@@ -1,15 +1,14 @@
 {
-  "dependencies": {
-    "telebot": "^1.4.1"
-  },
   "name": "FelixEDBot",
   "version": "0.0.1",
-  "description": "Telegram bot",
+  "description": "Telegram bot based on telebot",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "derzunov",
-  "license": ""
+  "license": "",
+  "dependencies": {
+    "telebot": "^1.4.1"
+  }
 }
