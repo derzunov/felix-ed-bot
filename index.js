@@ -1,4 +1,5 @@
 const TeleBot = require('telebot');
+import { default as bl } from './bl';
 
 console.log('starting bot');
 
@@ -30,6 +31,9 @@ const bot = new TeleBot({
 });
 
 bot.on('text', (msg) => msg.reply.text(msg.text));
+bot.on('text', (msg) => msg.reply.text(
+    bl.greet(msg.name)
+));
 
 bot.start();
 
