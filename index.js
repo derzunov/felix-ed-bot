@@ -32,7 +32,7 @@ const bot = new TeleBot({
 
 bot.on('text', (msg) => msg.reply.text(msg.text));
 bot.on('text', (msg) => msg.reply.text(
-    `DE: new 2 and webhook: ${ bl.greet(`${ msg.from.first_name } ${ msg.from.last_name }`) }`
+    `${ bl.greet(`${ msg.from.first_name } ${ msg.from.last_name }`) }`
 ));
 
 
