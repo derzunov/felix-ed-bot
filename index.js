@@ -3,7 +3,7 @@ const TeleBot = require('telebot');
 console.log('starting bot');
 
 const bot = new TeleBot({
-    token: env.TELEGRAM_BOT_TOKEN, // Required. Telegram Bot API token.
+    token: process.env.TELEGRAM_BOT_TOKEN, // Required. Telegram Bot API token.
     polling: { // Optional. Use polling.
         interval: 1000, // Optional. How often check updates (in ms).
         timeout: 0, // Optional. Update polling timeout (0 - short polling).
