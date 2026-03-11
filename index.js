@@ -1,5 +1,5 @@
 const TeleBot = require('telebot');
-import { default as bl } from './bl';
+const bl = requre( './bl' );
 
 console.log('starting bot');
 
