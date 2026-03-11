@@ -30,7 +30,10 @@ const bot = new TeleBot({
     }
 });
 
-bot.on('text', (msg) => msg.reply.text(msg.text));
+// TODO: DE: Передавать текст сообщения в bl,
+//  там разбирать его и передавать в зависимости от ситуации в разные методы
+//  Например, при обнаружении мата передавать в метод бана и т.д.
+// bot.on('text', (msg) => msg.reply.text(msg.text));
 bot.on('text', (msg) => msg.reply.text(
     `${ bl.greet(`${ msg.from.first_name } ${ msg.from.last_name }`) }`
 ));
