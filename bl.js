@@ -1,6 +1,6 @@
 const bl = {
     greet(name) {
-        return `Приветствуем Вас, ${ name }!`
+        return `Приветствую Вас, ${ name }!`
     }
 }
 
