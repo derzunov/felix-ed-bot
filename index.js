@@ -32,7 +32,7 @@ const bot = new TeleBot({
 
 bot.on('text', (msg) => msg.reply.text(msg.text));
 bot.on('text', (msg) => msg.reply.text(
-    bl.greet(msg.name)
+    `DE: new: ${ bl.greet(msg.name) }`
 ));
 
 bot.start();
